@@ -1,0 +1,66 @@
+/*
+Color Palette:
+Light Orange: #FFB997
+Red Orange: #F67E7D
+Light purple: #843B62
+Dark purple/blue: #0B032D
+Pastel Purple: #74546A
+*/
+#calculator {
+    font-size: 25px;
+    display: grid; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+   grid-template: repeat(6,1fr) / repeat(4,1fr);
+    width: 400px;
+    height: 700px;
+    grid-gap: 3px;
+    
+}
+body {
+    background-color: lightcoral;
+}
+.border {
+    position: relative;
+    background-color:  #2081C3;
+    width: 450px;
+    height: 750px;
+    border-radius: 20px;
+    margin: auto;
+}
+button {
+    background-color: #4B4C4F;
+    color: #F5FAFF;
+    font-weight: bolder;
+   
+}
+
+button::-moz-focus-inner {
+    border: 0;
+  }
+  
+#display {
+    background-color: #0B032D;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 10px;
+    color: white;
+    text-align: right;
+   
+}
+#divide, #multiply, #subtract, #add {
+    background-color: #FF3E41;
+}
+
+#equal {
+    background-color: #BA2E30;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#backspace, #sign, #reset {
+    background-color: #454662;
+}
